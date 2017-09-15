@@ -9,6 +9,12 @@ import java.util.Date;
 public class HappyMood extends Mood {
 
     public HappyMood() {
-
+        setMood("Happy! :-)");
     }
+
+    public HappyMood(Date date) {
+        super(date);
+        setMood("Happy! :-)");
+    }
+
 }

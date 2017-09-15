@@ -42,6 +42,16 @@ public class LonelyTwitterActivity extends Activity {
 				Tweet tweet = new ImportantTweet("");
 				NormalTweet tweet1 = new NormalTweet("");
 
+				HappyMood mood1 = new HappyMood();
+				SadMood mood2 = new SadMood();
+				//Log.d("Debugging", "mood1: " + mood1.getMood());
+				//Log.d("Debugging", "mood2: " + mood2.getMood());
+				tweet.addMood(mood1);
+				tweet.addMood(mood2);
+				tweet1.addMood(mood2);
+				//Log.d("Debugging", "tweet moods: " + tweet.getMoods());
+				//Log.d("Debugging", "tweet1 moods: " + tweet1.getMoods());
+
 				try {
 					tweet.setMessage("Hello");
 				} catch (TweetTooLongException e) {
@@ -53,6 +63,7 @@ public class LonelyTwitterActivity extends Activity {
 				tweets.add(tweet1);
 				for (Tweet t : tweets){
 					Log.d("Some Tag", "The isImportant method on this object returns " + t.isImportant());
+					Log.d("Some Tag", "The getMoods method on this object returns " + t.getMoods());
 				}
 
 				ArrayList<Tweetable> tweetables = new ArrayList<Tweetable>();
