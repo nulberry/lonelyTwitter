@@ -52,7 +52,7 @@ public class LonelyTwitterActivity extends Activity {
 				tweets.add(tweet);
 				tweets.add(tweet1);
 				for (Tweet t : tweets){
-					Log.d("Some Tag", "The isImportant method on this object returns" + t.isImportant());
+					Log.d("Some Tag", "The isImportant method on this object returns " + t.isImportant());
 				}
 
 				ArrayList<Tweetable> tweetables = new ArrayList<Tweetable>();
@@ -62,7 +62,7 @@ public class LonelyTwitterActivity extends Activity {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
 				saveInFile(text, new Date(System.currentTimeMillis()));
-				finish();
+				//finish();
 
 			}
 		});
