@@ -15,11 +15,16 @@ public class TweetListTest extends ActivityInstrumentationTestCase2 {
     }
 
     public void testAddTweet() {
-        //assertTrue(Boolean.FALSE);
         TweetList tweets = new TweetList();
-        Tweet tweet = new NormalTweet("adding Tweet");
-        tweets.addTweet(tweet);
-        assertTrue(tweets.hasTweet(tweet));
+        Tweet tweet1 = new NormalTweet("adding Tweet");
+        tweets.addTweet(tweet1);
+        Tweet tweet2 = new NormalTweet("adding Tweet");
+        try {
+            tweets.addTweet(tweet2);
+        } catch (IllegalArgumentException e) {
+            assertNotNull(e);
+        }
+        assertTrue(tweets.hasTweet(tweet1));
     }
 
     public void testDelete() {
