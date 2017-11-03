@@ -2,8 +2,9 @@ package ca.ualberta.cs.lonelytwitter;
 
 import android.test.ActivityInstrumentationTestCase2;
 
+// default file template fixed
 /**
- * Created by makepeac on 9/29/16.
+ * Modified by amwhitta on 02/11/17
  */
 public class TweetListTest extends ActivityInstrumentationTestCase2 {
 

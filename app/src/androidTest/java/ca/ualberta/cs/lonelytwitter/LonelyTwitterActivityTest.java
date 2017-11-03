@@ -1,18 +1,16 @@
 package ca.ualberta.cs.lonelytwitter;
 
+// deleted unused imports
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import com.robotium.solo.Solo;
 
-import junit.framework.TestCase;
-
+// default file template fixed
 /**
- * Created by wz on 14/09/15.
+ * Modified by amwhitta on 02/11/17.
  */
 public class LonelyTwitterActivityTest extends ActivityInstrumentationTestCase2<LonelyTwitterActivity> {
     private Solo solo;

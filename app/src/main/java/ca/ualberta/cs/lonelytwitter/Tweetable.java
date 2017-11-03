@@ -4,8 +4,8 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 public interface Tweetable {
-    public String getMessage();
+    String getMessage();         // fixed unnecessary interface modifier (was public)
 
-    public Date getDate();
+    Date getDate();              // fixed unnecessary interface modifier (was public)
 
 }

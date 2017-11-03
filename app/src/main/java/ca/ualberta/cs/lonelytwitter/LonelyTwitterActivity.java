@@ -1,5 +1,6 @@
 package ca.ualberta.cs.lonelytwitter;
 
+// deleted unused imports
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,10 +10,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Date;
-
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +19,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
@@ -32,7 +29,7 @@ public class LonelyTwitterActivity extends Activity {
 	private ListView oldTweetsList;
 	private ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
 	private ArrayAdapter<Tweet> adapter;
-	private LonelyTwitterActivity activity = this;
+	private final LonelyTwitterActivity activity = this; // declaration could have final modifier
 
 	public ListView getOldTweetsList() {
 		return oldTweetsList;

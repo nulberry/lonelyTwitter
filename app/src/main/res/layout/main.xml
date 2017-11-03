@@ -4,11 +4,12 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <!-- added hard coded string to translations -->
     <TextView
         android:id="@+id/oldTweetsTitle"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="My old tweets" />
+        android:text="@string/old_tweets" />
 
     <ListView
         android:id="@+id/oldTweetsList"

@@ -3,25 +3,26 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.ArrayList;
 
 public class TweetList {
-    private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
+    private final ArrayList<Tweet> tweets = new ArrayList<Tweet>(); // declaration could have final modifier
 
-    public TweetList(){
+    // made access to methods package-private because declaration access could be weaker
+    TweetList(){
 
     }
 
-    public Tweet getTweet(int index){
+    Tweet getTweet(int index){
         return tweets.get(index);
     }
 
-    public boolean hasTweet(Tweet tweet){
+    boolean hasTweet(Tweet tweet){
         return tweets.contains(tweet);
     }
 
-    public void add(Tweet tweet) {
+    void add(Tweet tweet) {
         tweets.add(tweet);
     }
 
-    public void delete(Tweet tweet) {
+    void delete(Tweet tweet) {
         tweets.remove(tweet);
     }
 }
